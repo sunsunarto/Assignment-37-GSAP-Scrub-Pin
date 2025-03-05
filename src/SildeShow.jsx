@@ -16,7 +16,7 @@ const Slideshow = () => {
 
     gsap.to(images, {
       opacity: 1,
-      y: 100,
+
       xPercent: -100 * (images.length - 1),
       duration: 1,
       scrollTrigger: {
@@ -32,7 +32,6 @@ const Slideshow = () => {
 
   return (
     <div>
-      <div style={{height: '1000px'}}></div>
       <div className="slideshow" ref={slideshowRef}>
         <div className="slide" ref={image1Ref}>
           <img src="https://th.bing.com/th/id/OIP.Yn3-DB_vCwU_sRc_yiXsOAHaFQ?rs=1&pid=ImgDetMain" alt="Slide 1" />
@@ -44,7 +43,6 @@ const Slideshow = () => {
           <img src="https://th.bing.com/th/id/R.4f82226753a244673f187dacc44a9c63?rik=JeCyNIHrS1nO2g&riu=http%3a%2f%2fwww.aircraftsandplanes.com%2fwp-content%2fuploads%2f2014%2f08%2fNorth-American-P-51-Mustang-Red-Tail.jpg&ehk=1xvriG%2fppYwUmVdLKw4WfRBJvcGRfJbDPuwFEWCmC9M%3d&risl=&pid=ImgRaw&r=0" alt="Slide 3" />
         </div>
       </div>
-      <div style={{height: '1000px'}}></div>
     </div>
   );
 };
